@@ -3,8 +3,8 @@ import asyncHandler from 'express-async-handler';
 import User from '../models/userModel.js';
 
 export const protect = asyncHandler(async (req, res, next) => {
-//   const token = req.cookies?.accessToken;
-    const token = req.headers.authorization || req.headers.Authorization;
+  const token = req.cookies?.accessToken;
+    // const token = req.headers.authorization || req.headers.Authorization;
 
   if (!token) {
     res.status(401);
