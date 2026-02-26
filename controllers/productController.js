@@ -74,3 +74,22 @@ export const deleteProduct = async (req, res) => {
   }
 };
 
+// GET /api/products
+export const getProducts = async (req, res) => {
+  try {
+    const products = await Product.find();
+    res.json({ success: true, products });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+// GET /api/products/:id
+export const getProductById = async (req, res) => {
+  try {
+    const product = await Product.findById(req.params.id);
+    res.json({ success: true, product });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};  
