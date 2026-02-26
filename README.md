@@ -39,12 +39,16 @@ cd <REPO_FOLDER>
 
 ```
 
-### Proof of work:
+## Proof of work:
 
+### users data
 ![users doc](screen%20shots%20/Users-doc.png)
 
+### products data
 ![products doc](screen%20shots%20/products-doc.png)
 
+### orders data
 ![orders doc](screen%20shots%20/order-doc.png)
 
-![delete product if rejected](screen%20shots%20/delete-product-test.png)
+### approving/rejecting/shipping status
+![](screen%20shots%20/image.png)
